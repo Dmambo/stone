@@ -23,15 +23,35 @@ const MainNav = (props: Props) => {
   ];
   return (
     <div>
-      <ul className="flex gap-4">
-        {routes.map((route, index) => {
-          return (
-            <li key={index}>
-              <a href={route.path}>{route.name}</a>
-            </li>
-          );
-        })}
-      </ul>
+      {" "}
+      <div >
+        <ul className="hidden md:flex gap-4 ">
+          {routes.map((route, index) => {
+            return (
+              <li key={index}>
+                <a href={route.path}>{route.name}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/*  */}
+      <div
+      >
+        <div>
+        <ul className="md:hidden flex flex-col gap-4 ">
+          {routes.map((route, index) => {
+            return (
+              <li key={index} className=" flex  items-center mt-10">
+                <a href={route.path}>{route.name}</a>
+              </li>
+            );
+          })}
+        </ul>
+          
+        </div>
+      </div>
     </div>
   );
 };
