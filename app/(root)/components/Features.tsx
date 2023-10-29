@@ -21,7 +21,7 @@ const Features = (props: Props) => {
                 allowing you to create unique and stunning jewelry.
               </p>
               <Link href="/gallery">
-                <Button variant={"secondary"} className="text-black mb-4">
+                <Button variant={"destructive"} className="text-white mb-4">
                   Check our Gallery
                 </Button>
               </Link>
@@ -47,7 +47,7 @@ const Features = (props: Props) => {
               any occasion.{" "}
             </p>
             <Link href="/gallery">
-              <Button variant={"secondary"} className="text-black mb-4">
+              <Button variant={"destructive"} className="text-white mb-4">
                 Check our Gallery
               </Button>
             </Link>

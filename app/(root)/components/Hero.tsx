@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -14,6 +16,11 @@ const Hero = (props: Props) => {
           Explore our exquisite collection of gemstones and find the perfect
           piece for your jewelry.{" "}
         </p>
+        <Link href="/gallery">
+                <Button variant={"destructive"} className="text-white mt-4">
+                  Check our Gallery
+                </Button>
+              </Link>
       </div>
       <div className="rounded-lg">
         <Image

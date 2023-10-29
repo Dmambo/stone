@@ -37,7 +37,7 @@ const Footer = (props: Props) => {
           <h2 className="mb-4">Contact</h2>
           <ul className="text-xs text-slate-300 ">
             <li className="mb-3">Info</li>
-            <li className="mb-3">number</li>
+            <li className="mb-3">+66823650818</li>
             <li className="mb-3"><div className="flex text-xs gap-1"><Facebook />
             <PhoneCall />
             <Instagram />

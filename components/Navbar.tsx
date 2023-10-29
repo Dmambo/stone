@@ -11,6 +11,10 @@ const Navbar = (props: Props) => {
 
   const [open, setOpen] = useState(false)
 
+  const handleGetConsultation = () => {
+    window.location.href = 'https://wa.link/6igttg'; // Set the URL you want to open
+  };
+
 
   return (
     <main className="bg-black text-white">
@@ -21,7 +25,7 @@ const Navbar = (props: Props) => {
           <Image src="/logo2.png" alt="logo" width={94} height={19} />
         </div>
         <div className="hidden md:block">
-          <Button variant={"secondary"}>Get consultation</Button>
+          <Button variant={"secondary"} onClick={handleGetConsultation}>Get consultation</Button>
         </div>
 
 
@@ -40,7 +44,7 @@ const Navbar = (props: Props) => {
         <div className=" flex items-center justify-center m-auto font-bold text-2xl"><Image src="/logo1.png" alt="logo" width={94} height={19} /></div>
           <MainNav />
           <div className=" mt-8 block">
-          <Button variant={"default"}>Get consultation</Button>
+          <Button variant={"default"} onClick={handleGetConsultation}>Get consultation</Button>
         </div>
         </div>
         
