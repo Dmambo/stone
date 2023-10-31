@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Route = {
@@ -61,7 +62,7 @@ const MainNav = (props: Props) => {
                 )}
                 onClick={() => handleRouteClick(index)}
               >
-                <a href={route.path}>{route.name}</a>
+                <Link href={route.path}>{route.name}</Link>
               </li>
             );
           })}
@@ -75,7 +76,7 @@ const MainNav = (props: Props) => {
             {routes.map((route, index) => {
               return (
                 <li key={index} className=" flex  items-center mt-10">
-                  <a href={route.path}>{route.name}</a>
+                  <Link href={route.path}>{route.name}</Link>
                 </li>
               );
             })}
