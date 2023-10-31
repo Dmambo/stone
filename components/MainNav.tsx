@@ -69,7 +69,7 @@ const MainNav = (props: Props) => {
         </ul>
       </div>
 
-      {/*  */}
+      {/* mobile version */}
       <div>
         <div>
           <ul className="md:hidden flex flex-col gap-4 ">

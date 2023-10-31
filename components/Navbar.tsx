@@ -42,7 +42,7 @@ const Navbar = (props: Props) => {
 </div></div>
         <div  className={`md:hidden flex-col bg-white absolute w-full h-full bottom-0  text-black py-14 pl-8 font-bold text-xl duration-500 ${open ? 'left-0' :  'left-[-100%]'}`}>
         <div className=" flex items-center justify-center m-auto font-bold text-2xl"><Image src="/logo1.png" alt="logo" width={94} height={19} /></div>
-          <MainNav />
+          <div onClick={() => setOpen(!open)}><MainNav /></div>
           <div className=" mt-8 block">
           <Button variant={"default"} onClick={handleGetConsultation}>Get consultation</Button>
         </div>
