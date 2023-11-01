@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import MainNav from "./MainNav";
 import { Menu, XCircle } from 'lucide-react';
+import Link from "next/link";
 
 type Props = {};
 
@@ -22,7 +23,9 @@ const Navbar = (props: Props) => {
         <div><MainNav /></div>
   
         <div className="flex">
+          <Link href="/">
           <Image src="/logo2.png" alt="logo" width={94} height={19} />
+          </Link>
         </div>
         <div className="hidden md:block">
           <Button variant={"secondary"} onClick={handleGetConsultation}>Get consultation</Button>
@@ -34,7 +37,8 @@ const Navbar = (props: Props) => {
       {/* mobile version */}
 
         <div className=" flex justify-between items-center mx-3"><div className=" md:hidden flex">
-          <Image src="/logo2.png" alt="logo" width={94} height={19} />
+          <Link href="/">
+          <Image src="/logo2.png" alt="logo" width={94} height={19} /></Link>
         </div>
         <div className="z-50 md:hidden" onClick={() => setOpen(!open)}>{
           open ? <XCircle size={32} color="#000" /> : <Menu size={32} color="#fff" />
